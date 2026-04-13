@@ -12,7 +12,7 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 
 ## Hinweise
 
-- **macOS:** Die Anleitungen setzen voraus, dass [Homebrew](https://brew.sh) installiert ist. Falls nicht, folge zuerst der Anleitung auf der Seite [Informatik](docs/informatik.html).
+- **macOS:** Die Anleitungen setzen voraus, dass [Homebrew](https://brew.sh) installiert ist. Falls nicht, zuerst die Seite [Homebrew einrichten](docs/homebrew.html) befolgen.
 - **Windows:** Befehle müssen in **PowerShell als Administrator** ausgeführt werden.
 - **Webapplikationen** benötigen keine Installation – sie werden im Browser geöffnet.
 - Programme mit dem Vermerk *nur für Lehrpersonen* müssen von Schülerinnen nicht installiert werden.
@@ -21,6 +21,7 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 
 | Fachschaft | Seite |
 |---|---|
+| **macOS: Homebrew einrichten** | [Homebrew (macOS)](docs/homebrew.html) |
 | Alle Fächer | [SafeExamBrowser & Microsoft 365](docs/allgemein.html) |
 | Informatik | [VS Code, Python, Git, Anaconda, SQLite, Filius](docs/informatik.html) |
 | Biologie | [ApE, ImageJ, CellProfiler, MEGA, GraphPad Prism](docs/biologie.html) |
@@ -30,3 +31,4 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 | Bildnerisches Gestalten | [Adobe Creative Cloud, Blender, Tinkercad](docs/bg.html) |
 | Sport | [iPad-Apps (BAM, Coach Now, Polar GoFit, SprintTimer)](docs/sport.html) |
 | Webapplikationen | [Moodle, Canva, Classtime, BandLab, Digithek u.v.m.](docs/webapplikationen.html) |
+| **Installationscheck** | [Alle Programme überprüfen](docs/verifikation.html) |

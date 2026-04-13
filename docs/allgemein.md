@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alle Fächer
-nav_order: 2
+nav_order: 3
 ---
 
 # Alle Fächer
@@ -42,4 +42,11 @@ winget install -e --id ETHZurich.SafeExamBrowser --scope machine --silent --acce
 Microsoft 365 (Word, Excel, PowerPoint, Teams usw.) steht als Webanwendung unter [office.com](https://www.office.com) zur Verfügung und kann zusätzlich lokal installiert werden.
 
 - **Webzugang:** [office.com](https://www.office.com) – Login mit der schulischen E-Mail-Adresse
-- **Lokale Installation:** Im Microsoft 365-Konto unter *Einstellungen → Office-Apps* herunterladen
+
+### macOS
+
+Lokale Installation über das Microsoft 365-Konto: Im Browser unter [office.com](https://www.office.com) anmelden → *Einstellungen → Office-Apps* → herunterladen und installieren.
+
+### Windows
+
+Lokale Installation über das Microsoft 365-Konto: Im Browser unter [office.com](https://www.office.com) anmelden → *Einstellungen → Office-Apps* → herunterladen und installieren.
