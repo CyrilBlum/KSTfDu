@@ -4,7 +4,7 @@ title: Startseite
 nav_order: 1
 ---
 
-# Software-Installation KSTfDu
+# Software-Installation KSTfDü
 
 Diese Seite enthält Installationsanleitungen für alle an der Kantonsschule Dübendorf (KSTfDü) verwendeten Programme, geordnet nach Fachschaft.
 
@@ -21,14 +21,14 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 
 | Fachschaft | Seite |
 |---|---|
-| **macOS: Homebrew einrichten** | [Homebrew (macOS)](docs/homebrew.html) |
 | Alle Fächer | [SafeExamBrowser & Microsoft 365](docs/allgemein.html) |
-| Informatik | [VS Code, Python, Git, Anaconda, SQLite, Filius](docs/informatik.html) |
+| Bildnerisches Gestalten | [Adobe Creative Cloud, Blender, Tinkercad](docs/bg.html) |
 | Biologie | [ApE, ImageJ, CellProfiler, MEGA, GraphPad Prism](docs/biologie.html) |
 | Chemie | [ChemDraw, Chemix, Römpp](docs/chemie.html) |
+| Informatik | [VS Code, Python, Git, Anaconda, SQLite, Filius](docs/informatik.html) |
 | Mathematik | [GeoGebra, Matlab](docs/mathematik.html) |
 | Musik | [MuseScore, Ableton, GarageBand, Logic Pro, Dorico Pro](docs/musik.html) |
-| Bildnerisches Gestalten | [Adobe Creative Cloud, Blender, Tinkercad](docs/bg.html) |
 | Sport | [iPad-Apps (BAM, Coach Now, Polar GoFit, SprintTimer)](docs/sport.html) |
 | Webapplikationen | [Moodle, Canva, Classtime, BandLab, Digithek u.v.m.](docs/webapplikationen.html) |
 | **Installationscheck** | [Alle Programme überprüfen](docs/verifikation.html) |
+| **macOS: Homebrew einrichten** | [Homebrew (macOS)](docs/homebrew.html) |

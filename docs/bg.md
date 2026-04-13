@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bildnerisches Gestalten
-nav_order: 9
+nav_order: 3
 ---
 
 # Bildnerisches Gestalten

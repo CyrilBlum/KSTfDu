@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alle Fächer
-nav_order: 3
+nav_order: 2
 ---
 
 # Alle Fächer
