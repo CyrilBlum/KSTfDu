@@ -61,6 +61,18 @@ check_app() {
   fi
 }
 
+check_app_pattern() {
+  local label="$1"
+  local pattern="$2"
+  if find /Applications -maxdepth 1 -name "$pattern" -type d 2>/dev/null | grep -q .; then
+    echo "✅  $label"
+    ok=$((ok + 1))
+  else
+    echo "❌  $label – nicht gefunden (/Applications/$pattern)"
+    fail=$((fail + 1))
+  fi
+}
+
 echo "--- Alle Fächer ---"
 check_cmd   "Homebrew"             "brew"
 check_cask  "SafeExamBrowser"      "safe-exam-browser"
@@ -80,13 +92,13 @@ echo "--- Biologie ---"
 check_cask  "Fiji (ImageJ)"        "fiji"
 check_app   "ApE"                  "/Applications/ApE.app"
 check_app   "CellProfiler"         "/Applications/CellProfiler.app"
-check_app   "MEGA"                 "/Applications/MEGA X.app"
-check_app   "GraphPad Prism"       "/Applications/GraphPad Prism 10.app"
+check_app_pattern "MEGA"           "MEGA*.app"
+check_app_pattern "GraphPad Prism" "GraphPad Prism*.app"
 
 echo ""
 echo "--- Mathematik ---"
 check_app   "GeoGebra"             "/Applications/GeoGebra Classic 6.app"
-check_app   "Matlab"               "/Applications/MATLAB_R2024b.app"
+check_app_pattern "Matlab"         "MATLAB_R*.app"
 
 echo ""
 echo "--- Musik ---"
@@ -143,6 +155,29 @@ function Check-Path {
     }
 }
 
+function Check-Glob {
+    param([string]$Label, [string]$GlobPattern)
+    $found = Get-Item $GlobPattern -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($found) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht gefunden ($GlobPattern)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
+function Check-Command {
+    param([string]$Label, [string]$Cmd)
+    if (Get-Command $Cmd -ErrorAction SilentlyContinue) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht gefunden (Befehl: $Cmd)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
 Write-Host "--- Alle Fächer ---"
 Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
 
@@ -152,7 +187,7 @@ Check-Winget "VS Code"              "Microsoft.VisualStudioCode"
 Check-Winget "Python 3"             "Python.Python.3.13"
 Check-Winget "Git"                  "Git.Git"
 Check-Winget "Anaconda"             "Anaconda.Anaconda3"
-Check-Path   "SQLite (via Python)"  "$env:LOCALAPPDATA\Programs\Python\Python313\Lib\sqlite3\__init__.py"
+Check-Command "SQLite (via Python)" "python"  # sqlite3 ist Bestandteil von Python
 Check-Path   "Filius"               "$env:ProgramFiles\Filius\Filius.exe"
 
 Write-Host ""
@@ -160,8 +195,8 @@ Write-Host "--- Biologie ---"
 Check-Path   "Fiji (ImageJ)"        "$env:ProgramFiles\Fiji.app\ImageJ-win64.exe"
 Check-Path   "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
 Check-Path   "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
-Check-Path   "MEGA"                 "$env:ProgramFiles\MEGA11\mega.exe"
-Check-Path   "GraphPad Prism"       "$env:ProgramFiles\GraphPad\Prism 10\Prism.exe"
+Check-Glob   "MEGA"                 "$env:ProgramFiles\MEGA*\mega.exe"
+Check-Glob   "GraphPad Prism"       "$env:ProgramFiles\GraphPad\Prism *\Prism.exe"
 
 Write-Host ""
 Write-Host "--- Mathematik ---"
