@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Alle Fächer
-nav_order: 2
+parent: Fachschaften
+nav_order: 1
 ---
 
 # Alle Fächer

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Musik
-nav_order: 8
+parent: Fachschaften
+nav_order: 7
 ---
 
 # Musik

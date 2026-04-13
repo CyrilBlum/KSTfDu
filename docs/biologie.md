@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Biologie
-nav_order: 4
+parent: Fachschaften
+nav_order: 3
 ---
 
 # Biologie

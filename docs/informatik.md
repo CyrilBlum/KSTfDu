@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Informatik
-nav_order: 6
+parent: Fachschaften
+nav_order: 5
 ---
 
 # Informatik

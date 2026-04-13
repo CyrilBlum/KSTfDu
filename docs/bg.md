@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Bildnerisches Gestalten
-nav_order: 3
+parent: Fachschaften
+nav_order: 2
 ---
 
 # Bildnerisches Gestalten

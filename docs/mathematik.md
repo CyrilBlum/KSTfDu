@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Mathematik
-nav_order: 7
+parent: Fachschaften
+nav_order: 6
 ---
 
 # Mathematik

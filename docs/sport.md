@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Sport
-nav_order: 9
+parent: Fachschaften
+nav_order: 8
 ---
 
 # Sport

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Chemie
-nav_order: 5
+parent: Fachschaften
+nav_order: 4
 ---
 
 # Chemie
