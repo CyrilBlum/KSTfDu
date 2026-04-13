@@ -45,8 +45,16 @@ Microsoft 365 (Word, Excel, PowerPoint, Teams usw.) steht als Webanwendung unter
 
 ### macOS
 
-Lokale Installation über das Microsoft 365-Konto: Im Browser unter [office.com](https://www.office.com) anmelden → *Einstellungen → Office-Apps* → herunterladen und installieren.
+```bash
+brew install --cask microsoft-office
+```
+
+Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
 
 ### Windows
 
-Lokale Installation über das Microsoft 365-Konto: Im Browser unter [office.com](https://www.office.com) anmelden → *Einstellungen → Office-Apps* → herunterladen und installieren.
+```powershell
+winget install -e --id Microsoft.Office --scope machine --silent --accept-package-agreements --accept-source-agreements
+```
+
+Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.

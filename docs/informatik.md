@@ -36,7 +36,7 @@ winget install -e --id Microsoft.VisualStudioCode --scope machine --silent --acc
 
 ## Python und pip
 
-Python ist die Programmiersprache des Informatikunterrichts. pip (Paketmanager für Python) wird automatisch mitinstalliert.
+Python ist die Programmiersprache des Informatikunterrichts. `pip` (Paketmanager für Python) wird automatisch mitinstalliert.
 
 ### macOS
 
@@ -49,62 +49,6 @@ brew install python3
 ```powershell
 winget install -e --id Python.Python.3.13 --scope machine --silent --accept-package-agreements --accept-source-agreements
 ```
-
----
-
-## Git
-
-Git ist ein Versionskontrollsystem zur Nachverfolgung von Änderungen in Programmierprojekten.
-
-### macOS
-
-```bash
-brew install git
-```
-
-### Windows
-
-```powershell
-winget install -e --id Git.Git --scope machine --silent --accept-package-agreements --accept-source-agreements
-```
-
----
-
-## Anaconda (inkl. Jupyter Notebook)
-
-Anaconda ist eine Python-Distribution für wissenschaftliches Rechnen und Data Science. Sie enthält unter anderem Jupyter Notebook.
-
-### macOS
-
-```bash
-brew install --cask anaconda
-```
-
-Nach der Installation die PATH-Variable anpassen – Hinweise werden im Terminal angezeigt.
-
-### Windows
-
-```powershell
-winget install -e --id Anaconda.Anaconda3 --scope machine --silent --accept-package-agreements --accept-source-agreements
-```
-
----
-
-## SQLite
-
-SQLite ist ein leichtgewichtiges, serverloses Datenbanksystem. Es wird automatisch mit Python mitgeliefert.
-
-### macOS
-
-SQLite ist auf macOS bereits vorinstalliert. Für die Kommandozeile:
-
-```bash
-brew install sqlite
-```
-
-### Windows
-
-SQLite ist im Python-Paket enthalten und damit bereits verfügbar. Für die eigenständige SQLite-Shell kann die ausführbare Datei manuell unter [sqlite.org/download.html](https://www.sqlite.org/download.html) heruntergeladen werden (keine Installation nötig – ZIP entpacken und `sqlite3.exe` verwenden).
 
 ---
 
@@ -122,8 +66,6 @@ Die macOS-Version herunterladen und installieren.
 
 ### Windows
 
-Filius ist nicht über winget verfügbar. Download unter:
-
-[lernsoftware-filius.de](https://www.lernsoftware-filius.de)
-
-Die Windows-Version herunterladen und installieren.
+```powershell
+winget install -e --id StefanFreischlad.Filius --scope machine --silent --accept-package-agreements --accept-source-agreements
+```

@@ -36,7 +36,7 @@ Auf neueren Macs mit Apple-Silicon-Chip installiert Homebrew standardmässig nac
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Diesen Block kopieren und ebenfalls im Terminal ausführen. Danach das Terminal neu starten.
+Diesen Block kopieren (**nicht den obigen, sondern den im Terminal angezeigten**) und ebenfalls im Terminal ausführen. Danach das Terminal neu starten.
 
 ---
 
