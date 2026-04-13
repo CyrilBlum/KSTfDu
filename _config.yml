@@ -1,0 +1,18 @@
+title: Software-Installation KSTfDu
+description: Installationsanleitungen für Schülerinnen der Kantonsschule TfDu
+
+remote_theme: just-the-docs/just-the-docs
+
+url: "https://cyrilblum.github.io"
+baseurl: "/KSTfDu"
+
+search_enabled: true
+heading_anchors: true
+
+footer_content: "Kantonsschule TfDu"
+
+nav_sort: order
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
