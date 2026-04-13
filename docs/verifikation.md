@@ -15,8 +15,6 @@ Mit den folgenden Skripten kann überprüft werden, ob alle Programme korrekt in
 Öffne ein Terminal (*Cmd + Leertaste → „Terminal"*) und führe folgenden Befehl aus:
 
 ```bash
-#!/bin/bash
-
 echo "========================================"
 echo " Installationscheck – macOS"
 echo "========================================"

@@ -1,5 +1,5 @@
-title: Software-Installation KSTfDu
-description: Installationsanleitungen für Schülerinnen der Kantonsschule TfDu
+title: Software-Installation KSTfDü
+description: Installationsanleitungen für Schülerinnen der Kantonsschule Dübendorf (KSTfDü)
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -9,7 +9,7 @@ baseurl: "/KSTfDu"
 search_enabled: true
 heading_anchors: true
 
-footer_content: "Kantonsschule TfDu"
+footer_content: "Kantonsschule KSTfDü, © Cyril Blum"
 
 nav_sort: order
 

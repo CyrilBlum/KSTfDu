@@ -6,7 +6,7 @@ nav_order: 1
 
 # Software-Installation KSTfDu
 
-Diese Seite enthält Installationsanleitungen für alle an der Kantonsschule TfDu verwendeten Programme, geordnet nach Fachschaft.
+Diese Seite enthält Installationsanleitungen für alle an der Kantonsschule Dübendorf (KSTfDü) verwendeten Programme, geordnet nach Fachschaft.
 
 Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows** (mit winget) bereitgestellt. Befehle können direkt aus den Codeblöcken kopiert werden.
 
