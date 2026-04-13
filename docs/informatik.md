@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Informatik
-nav_order: 3
+nav_order: 4
 ---
 
 # Informatik
@@ -13,20 +13,6 @@ Programme für den Informatikunterricht. Alle Programme werden im Rahmen des BYO
 | Programm | Ansprechperson |
 |---|---|
 | VS Code, Python, pip, Git, Anaconda, Jupyter Notebook, SQLite, Filius | Cyril Blum |
-
----
-
-## Homebrew (nur macOS – Voraussetzung)
-
-Homebrew ist der Paketmanager für macOS und wird für alle folgenden Installationen benötigt. Falls noch nicht installiert:
-
-Öffne ein Terminal (*Cmd + Leertaste → "Terminal"*) und führe aus:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Folge danach den Hinweisen zur PATH-Konfiguration, die im Terminal angezeigt werden.
 
 ---
 
@@ -106,7 +92,7 @@ winget install -e --id Anaconda.Anaconda3 --scope machine --silent --accept-pack
 
 ## SQLite
 
-SQLite ist ein leichtgewichtiges, serverloses Datenbanksystem. Es wird automatisch mit Python mitgeliefert und ist auf macOS vorinstalliert.
+SQLite ist ein leichtgewichtiges, serverloses Datenbanksystem. Es wird automatisch mit Python mitgeliefert.
 
 ### macOS
 
@@ -118,7 +104,7 @@ brew install sqlite
 
 ### Windows
 
-SQLite ist im Python-Paket enthalten. Für die eigenständige SQLite-Shell: Download unter [sqlite.org/download.html](https://www.sqlite.org/download.html).
+SQLite ist im Python-Paket enthalten und damit bereits verfügbar. Für die eigenständige SQLite-Shell kann die ausführbare Datei manuell unter [sqlite.org/download.html](https://www.sqlite.org/download.html) heruntergeladen werden (keine Installation nötig – ZIP entpacken und `sqlite3.exe` verwenden).
 
 ---
 
@@ -126,10 +112,18 @@ SQLite ist im Python-Paket enthalten. Für die eigenständige SQLite-Shell: Down
 
 Filius ist eine Netzwerksimulationssoftware für den Unterricht. Sie ermöglicht das Erstellen und Testen von Netzwerken.
 
-### macOS und Windows
+### macOS
 
-Filius ist nicht über Homebrew oder winget verfügbar. Download unter:
+Filius ist nicht über Homebrew verfügbar. Download unter:
 
 [lernsoftware-filius.de](https://www.lernsoftware-filius.de)
 
-Dort die aktuelle Version für das jeweilige Betriebssystem herunterladen und installieren.
+Die macOS-Version herunterladen und installieren.
+
+### Windows
+
+Filius ist nicht über winget verfügbar. Download unter:
+
+[lernsoftware-filius.de](https://www.lernsoftware-filius.de)
+
+Die Windows-Version herunterladen und installieren.

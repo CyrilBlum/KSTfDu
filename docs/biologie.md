@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Biologie
-nav_order: 4
+nav_order: 5
 ---
 
 # Biologie
@@ -20,11 +20,17 @@ Programme für den Biologieunterricht. Die meisten Programme werden im Rahmen de
 
 ApE ist ein kostenloser Plasmid-Editor für die Molekularbiologie.
 
-### macOS und Windows
+### macOS
 
-Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/)
+ApE ist nicht über Homebrew verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/)
 
-Die passende Version für das jeweilige Betriebssystem herunterladen und installieren.
+Die macOS-Version herunterladen und installieren.
+
+### Windows
+
+ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/)
+
+Die Windows-Version herunterladen und installieren.
 
 ---
 
@@ -40,7 +46,7 @@ brew install --cask fiji
 
 ### Windows
 
-Download unter: [fiji.sc](https://fiji.sc)
+Fiji ist nicht über winget verfügbar. Download unter: [fiji.sc](https://fiji.sc)
 
 Die Windows-Version herunterladen und entpacken – keine Installation nötig.
 
@@ -50,11 +56,17 @@ Die Windows-Version herunterladen und entpacken – keine Installation nötig.
 
 CellProfiler ist eine Software für die automatische Bildanalyse von Zellen.
 
-### macOS und Windows
+### macOS
 
-Download unter: [cellprofiler.org](https://cellprofiler.org)
+CellProfiler ist nicht über Homebrew verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org)
 
-Die passende Version für das jeweilige Betriebssystem herunterladen und installieren.
+Die macOS-Version herunterladen und installieren.
+
+### Windows
+
+CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org)
+
+Die Windows-Version herunterladen und installieren.
 
 ---
 
@@ -62,11 +74,17 @@ Die passende Version für das jeweilige Betriebssystem herunterladen und install
 
 MEGA (Molecular Evolutionary Genetics Analysis) wird für Alignments und phylogenetische Bäume verwendet.
 
-### macOS und Windows
+### macOS
 
-Download unter: [megasoftware.net](https://www.megasoftware.net)
+MEGA ist nicht über Homebrew verfügbar. Download unter: [megasoftware.net](https://www.megasoftware.net)
 
-Die passende Version für das jeweilige Betriebssystem herunterladen und installieren.
+Die macOS-Version herunterladen und installieren.
+
+### Windows
+
+MEGA ist nicht über winget verfügbar. Download unter: [megasoftware.net](https://www.megasoftware.net)
+
+Die Windows-Version herunterladen und installieren.
 
 ---
 
@@ -74,7 +92,13 @@ Die passende Version für das jeweilige Betriebssystem herunterladen und install
 
 GraphPad Prism ist ein kostenpflichtiges Programm zur Erstellung wissenschaftlicher Grafiken und Statistiken.
 
-### macOS und Windows
+### macOS
+
+Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
+
+Download unter: [graphpad.com](https://www.graphpad.com)
+
+### Windows
 
 Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
 
@@ -86,6 +110,12 @@ Download unter: [graphpad.com](https://www.graphpad.com)
 
 Brian ist eine webbasierte Quiz-App mit KI-Unterstützung zur Fragenerstellung.
 
+### macOS
+
+**Keine Installation nötig** – Brian wird im Webbrowser geöffnet.
+
+### Windows
+
 **Keine Installation nötig** – Brian wird im Webbrowser geöffnet.
 
 ---
@@ -93,5 +123,11 @@ Brian ist eine webbasierte Quiz-App mit KI-Unterstützung zur Fragenerstellung.
 ## Plickers
 
 Plickers ist eine Quiz-App, die ohne Gerät der Schülerinnen auskommt (gerätefrei).
+
+### macOS
+
+**Keine Installation nötig** – Plickers wird über die Lehrperson gesteuert.
+
+### Windows
 
 **Keine Installation nötig** – Plickers wird über die Lehrperson gesteuert.
