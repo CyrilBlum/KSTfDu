@@ -16,16 +16,21 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 ![Terminal unter macOS öffnen](docs/assets/images/Terminal.png)
 - **Windows:** Befehle müssen in **PowerShell als Administrator** ausgeführt werden:
 ![PowerShell unter Windows als Administrator](docs/assets/images/PowerShell.png)
-- **Webapplikationen** benötigen keine Installation – sie werden im Browser geöffnet.
-- Programme mit dem Vermerk *nur für Lehrpersonen* müssen von Schülerinnen nicht installiert werden.
+- Die Codeblöcke können einfach kopiert werden, indem Sie auf das Clipboard-Symbol (📋) im oberen rechnten Teil des Code-Blocks klicken. Danach können Sie den Code-Block per Cmd+V / Ctrl+V im Terminal bzw. PowerShell einfügen und mit Enter ausführen.
 
 ## Schnellinstallation
 
 Für eine kompakte Grundinstallation aller wichtigsten Tools:
 
-- [Schnellinstallation (macOS & Windows)](docs/schnellinstallation.html)
+- [⭐️ Schnellinstallation (macOS & Windows)](docs/schnellinstallation.html)
+
+Folgen Sie den Links, welche mit einem Sternchen ⭐ markiert sind, um alle Programme mit einem einzigen Block zu installieren, und um die Installation zu überprüfen. Sie können später ggf. einzelne Programme wieder entfernen oder hinzufügen:
+
+- [⭐️ Installationscheck (macOS & Windows)](docs/verifikation.html)
+- [⭐️ Deinstallation (macOS & Windows)](docs/deinstallation.html)
 
 ## Fachschaften
+Falls Sie nur Programme für eine bestimmte Fachschaft installieren möchten, finden Sie hier die Anleitungen:
 
 | Fachschaft | Seite |
 |---|---|

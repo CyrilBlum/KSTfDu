@@ -6,10 +6,7 @@ nav_order: 3
 
 # Schnellinstallation
 
-Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für macOS** und **einem Block für Windows**.
-
-> **Hinweis:** Einige Programme sind nicht zuverlässig über `brew` oder `winget` verfügbar und müssen manuell installiert werden (siehe unten).
-
+Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für macOS** und **einem Block für Windows**. 
 ---
 
 ## macOS (Homebrew)
@@ -96,21 +93,6 @@ echo " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen"
 echo "========================================"
 ```
 
-### Manuell (macOS)
-
-Folgende Programme ggf. manuell installieren (je nach Fach / Lizenz):
-
-- Microsoft 365
-- Filius
-- ApE
-- CellProfiler
-- MEGA
-- GraphPad Prism
-- Matlab
-- Ableton
-- GarageBand / Logic Pro (App Store)
-- Dorico Pro
-
 ---
 
 ## Windows (winget)
@@ -157,19 +139,3 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 ```
-
-### Manuell (Windows)
-
-Folgende Programme ggf. manuell installieren (je nach Fach / Lizenz):
-
-- Microsoft 365
-- Filius
-- Fiji (ImageJ)
-- ApE
-- CellProfiler
-- MEGA
-- GraphPad Prism
-- Matlab
-- Ableton
-- GarageBand / Logic Pro (nur macOS)
-- Dorico Pro
