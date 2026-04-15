@@ -2,7 +2,7 @@
 layout: default
 title: Informatik
 parent: Fachschaften
-nav_order: 5
+nav_order: 4
 ---
 
 # Informatik
@@ -13,7 +13,7 @@ Programme für den Informatikunterricht. Alle Programme werden im Rahmen des BYO
 
 | Programm | Ansprechperson |
 |---|---|
-| VS Code, Python, pip, Git, Anaconda, Jupyter Notebook, SQLite, Filius | Cyril Blum |
+| VS Code, Python, Filius | Cyril Blum |
 
 ---
 

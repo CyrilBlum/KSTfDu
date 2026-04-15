@@ -23,9 +23,10 @@ ApE ist ein kostenloser Plasmid-Editor für die Molekularbiologie.
 
 ### macOS
 
-ApE ist nicht über Homebrew verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/)
+```bash
+brew install --cask ape
+```
 
-Die macOS-Version herunterladen und installieren.
 
 ### Windows
 
@@ -47,9 +48,9 @@ brew install --cask fiji
 
 ### Windows
 
-Fiji ist nicht über winget verfügbar. Download unter: [fiji.sc](https://fiji.sc)
-
-Die Windows-Version herunterladen und entpacken – keine Installation nötig.
+```powershell
+winget install -e --id Fiji.ImageJ --scope machine --silent --accept-package-agreements --accept-source-agreements
+```
 
 ---
 
@@ -59,9 +60,9 @@ CellProfiler ist eine Software für die automatische Bildanalyse von Zellen.
 
 ### macOS
 
-CellProfiler ist nicht über Homebrew verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org)
-
-Die macOS-Version herunterladen und installieren.
+```bash
+brew install --cask cellprofiler
+```
 
 ### Windows
 
@@ -77,15 +78,15 @@ MEGA (Molecular Evolutionary Genetics Analysis) wird für Alignments und phyloge
 
 ### macOS
 
-MEGA ist nicht über Homebrew verfügbar. Download unter: [megasoftware.net](https://www.megasoftware.net)
-
-Die macOS-Version herunterladen und installieren.
+```bash
+brew install --cask mega
+```
 
 ### Windows
 
-MEGA ist nicht über winget verfügbar. Download unter: [megasoftware.net](https://www.megasoftware.net)
-
-Die Windows-Version herunterladen und installieren.
+```powershell
+winget install -e --id iGEM.MEGA.12 --scope machine --silent --accept-package-agreements --accept-source-agreements
+```
 
 ---
 
@@ -95,40 +96,17 @@ GraphPad Prism ist ein kostenpflichtiges Programm zur Erstellung wissenschaftlic
 
 ### macOS
 
-Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
+
+```bash
+brew install --cask prism
+```
 
 Download unter: [graphpad.com](https://www.graphpad.com)
 
 ### Windows
 
+```powershell
+winget install -e --id GraphPad.Prism --scope machine --silent --accept-package-agreements --accept-source-agreements
+```
+
 Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
-
-Download unter: [graphpad.com](https://www.graphpad.com)
-
----
-
-## Brian
-
-Brian ist eine webbasierte Quiz-App mit KI-Unterstützung zur Fragenerstellung.
-
-### macOS
-
-**Keine Installation nötig** – Brian wird im Webbrowser geöffnet.
-
-### Windows
-
-**Keine Installation nötig** – Brian wird im Webbrowser geöffnet.
-
----
-
-## Plickers
-
-Plickers ist eine Quiz-App, die ohne Gerät der Schülerinnen auskommt (gerätefrei).
-
-### macOS
-
-**Keine Installation nötig** – Plickers wird über die Lehrperson gesteuert.
-
-### Windows
-
-**Keine Installation nötig** – Plickers wird über die Lehrperson gesteuert.

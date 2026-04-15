@@ -17,18 +17,23 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 - **Webapplikationen** benötigen keine Installation – sie werden im Browser geöffnet.
 - Programme mit dem Vermerk *nur für Lehrpersonen* müssen von Schülerinnen nicht installiert werden.
 
+## Schnellinstallation
+
+Für eine kompakte Grundinstallation aller wichtigsten Tools:
+
+- [Schnellinstallation (macOS & Windows)](docs/schnellinstallation.html)
+
 ## Fachschaften
 
 | Fachschaft | Seite |
 |---|---|
 | Alle Fächer | [SafeExamBrowser & Microsoft 365](docs/allgemein.html) |
-| Bildnerisches Gestalten | [Adobe Creative Cloud, Blender, Tinkercad](docs/bg.html) |
+| Bildnerisches Gestalten | [Adobe Creative Cloud, Blender](docs/bg.html) |
 | Biologie | [ApE, ImageJ, CellProfiler, MEGA, GraphPad Prism](docs/biologie.html) |
-| Chemie | [ChemDraw, Chemix, Römpp](docs/chemie.html) |
 | Informatik | [VS Code, Python, Git, Anaconda, SQLite, Filius](docs/informatik.html) |
 | Mathematik | [GeoGebra, Matlab](docs/mathematik.html) |
 | Musik | [MuseScore, Ableton, GarageBand, Logic Pro, Dorico Pro](docs/musik.html) |
-| Sport | [iPad-Apps (BAM, Coach Now, Polar GoFit, SprintTimer)](docs/sport.html) |
 | Webapplikationen | [Moodle, Canva, Classtime, BandLab, Digithek u.v.m.](docs/webapplikationen.html) |
 | **Installationscheck** | [Alle Programme überprüfen](docs/verifikation.html) |
+| **Deinstallation** | [Tools entfernen (brew / winget)](docs/deinstallation.html) |
 | **macOS: Homebrew einrichten** | [Homebrew (macOS)](docs/homebrew.html) |

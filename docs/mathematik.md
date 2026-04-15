@@ -2,7 +2,7 @@
 layout: default
 title: Mathematik
 parent: Fachschaften
-nav_order: 6
+nav_order: 5
 ---
 
 # Mathematik
@@ -26,42 +26,12 @@ GeoGebra ist eine kostenlose Geometrie-App mit integriertem Rechner. Sie steht a
 
 ### macOS
 
-GeoGebra ist nicht über Homebrew verfügbar. Download der Desktop-App unter: [geogebra.org/download](https://www.geogebra.org/download)
+```bash
+brew install --cask geogebra
+```
 
 ### Windows
 
 ```powershell
 winget install -e --id GeoGebra.GeoGebra.Classic.6 --scope machine --silent --accept-package-agreements --accept-source-agreements
 ```
-
----
-
-## Matlab
-
-Matlab ist eine kostenpflichtige Programmierumgebung für mathematische Modellierung.
-
-### macOS
-
-Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
-
-Download unter: [mathworks.com/products/matlab](https://www.mathworks.com/products/matlab.html)
-
-### Windows
-
-Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
-
-Download unter: [mathworks.com/products/matlab](https://www.mathworks.com/products/matlab.html)
-
----
-
-## Geometry Sketch *(nur für Lehrpersonen)*
-
-Geometry Sketch ist eine Windows-Anwendung für geometrische Konstruktionen. Sie wird ausschliesslich von Lehrpersonen verwendet.
-
-### macOS
-
-Geometry Sketch ist nicht für macOS verfügbar.
-
-### Windows
-
-Geometry Sketch ist eine reine Windows-Anwendung. Für den Zugang an die Ansprechpersonen wenden.

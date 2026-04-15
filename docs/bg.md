@@ -68,37 +68,3 @@ brew install --cask blender
 ```powershell
 winget install -e --id BlenderFoundation.Blender --scope machine --silent --accept-package-agreements --accept-source-agreements
 ```
-
----
-
-## Autodesk Tinkercad
-
-Tinkercad ist eine kostenlose, webbasierte Anwendung für 3D-Design, Elektronik und Programmierung.
-
-### macOS
-
-**Keine Installation nötig** – Tinkercad wird im Webbrowser geöffnet: [tinkercad.com](https://www.tinkercad.com)
-
-Kostenlose Registrierung mit der schulischen E-Mail-Adresse.
-
-### Windows
-
-**Keine Installation nötig** – Tinkercad wird im Webbrowser geöffnet: [tinkercad.com](https://www.tinkercad.com)
-
-Kostenlose Registrierung mit der schulischen E-Mail-Adresse.
-
----
-
-## Stop Motion Studio
-
-Stop Motion Studio ist eine App zur Erstellung von Stop-Motion-Animationen (kostenpflichtig, ca. CHF 6). Die Beschaffung wird durch die Schule geklärt.
-
-### macOS
-
-Stop Motion Studio ist nicht als Desktop-App für macOS verfügbar. Es wird primär auf iOS-Geräten (iPad/iPhone) verwendet und kann im App Store heruntergeladen werden.
-
-### Windows
-
-Stop Motion Studio ist im Microsoft Store verfügbar:
-
-[Microsoft Store – Stop Motion Studio](https://apps.microsoft.com/store/search/Stop%20Motion%20Studio)
