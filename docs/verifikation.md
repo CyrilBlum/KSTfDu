@@ -75,6 +75,7 @@ echo "--- Alle Fächer ---"
 check_cmd   "Homebrew"             "brew"
 check_cask  "Microsoft Office"     "microsoft-office"
 check_cask  "SafeExamBrowser"      "safe-exam-browser"
+check_cask  "rectangle"            "rectangle"
 
 echo ""
 echo "--- Informatik ---"

@@ -130,6 +130,7 @@ echo ""
 
 casks=(
   safe-exam-browser
+  rectangle
   adobe-creative-cloud
   blender
   ape

@@ -37,6 +37,7 @@ formulas=(
 casks=(
   microsoft-office
   safe-exam-browser
+  rectangle
   adobe-creative-cloud
   blender
   ape

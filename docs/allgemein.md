@@ -54,3 +54,14 @@ Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lize
 ### Windows
 
 Microsoft 365 sollte unter Windows bereits vorinstalliert sein. Starten Sie eine beliebige Anwendung aus dem Microsoft 365 Paket (z.B. Word).Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
+
+---
+
+## Rectangle (nur macOS)
+Rectangle ist ein Fenster-Manager für macOS, der die Anordnung von Fenstern erleichtert.
+
+### macOS
+
+```bash
+brew install --cask rectangle
+```
