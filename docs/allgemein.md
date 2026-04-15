@@ -25,25 +25,11 @@ SafeExamBrowser ist ein gesicherter Prüfungsbrowser, der während digitalen Pr�
 
 ### macOS
 
-Öffne ein **Terminal**, indem du die Spotlight-Suche mit Cmd + Leertaste öffnest, Terminal eingibst und mit Enter bestätigst. 
-
-![Terminal unter macOS öffnen](assets/images/Terminal.png)
-
-Führe danach folgenden Befehl aus:
-
 ```bash
 brew install --cask safe-exam-browser
 ```
 
 ### Windows
-
-Öffne **PowerShell** als Administrator:
-
-![PowerShell unter Windows als Administrator](assets/images/PowerShell.png)
-
-Führe danach folgenden Befehl aus:
-
-
 
 ```powershell
 winget install -e --id ETHZurich.SafeExamBrowser --scope machine --silent --accept-package-agreements --accept-source-agreements

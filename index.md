@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Startseite
+title: ⭐ Startseite
 nav_order: 1
 ---
 
@@ -12,8 +12,10 @@ Wo immer möglich werden Anleitungen für **macOS** (mit Homebrew) und **Windows
 
 ## Hinweise
 
-- **macOS:** Die Anleitungen setzen voraus, dass [Homebrew](https://brew.sh) installiert ist. Falls nicht, zuerst die Seite [Homebrew einrichten](docs/homebrew.html) befolgen.
-- **Windows:** Befehle müssen in **PowerShell als Administrator** ausgeführt werden.
+- **macOS:** Die Anleitungen setzen voraus, dass [Homebrew](https://brew.sh) installiert ist. Falls nicht, zuerst die Seite [Homebrew einrichten](docs/homebrew.html) befolgen. Befehle müssen in der **Terminal-App** ausgeführt werden. Öffne ein **Terminal**, indem du die Spotlight-Suche mit Cmd + Leertaste öffnest, Terminal eingibst und mit Enter bestätigst. 
+![Terminal unter macOS öffnen](docs/assets/images/Terminal.png)
+- **Windows:** Befehle müssen in **PowerShell als Administrator** ausgeführt werden:
+![PowerShell unter Windows als Administrator](docs/assets/images/PowerShell.png)
 - **Webapplikationen** benötigen keine Installation – sie werden im Browser geöffnet.
 - Programme mit dem Vermerk *nur für Lehrpersonen* müssen von Schülerinnen nicht installiert werden.
 

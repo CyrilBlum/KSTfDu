@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Installationscheck
-nav_order: 11
+title: ⭐ Installationscheck
+nav_order: 5
 ---
 
 # Installationscheck
@@ -73,6 +73,7 @@ check_app_pattern() {
 
 echo "--- Alle Fächer ---"
 check_cmd   "Homebrew"             "brew"
+check_cask  "Microsoft Office"     "microsoft-office"
 check_cask  "SafeExamBrowser"      "safe-exam-browser"
 
 echo ""
@@ -173,6 +174,7 @@ function Check-Command {
 
 Write-Host "--- Alle Fächer ---"
 Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
+Check-Winget "Microsoft Office"     "Microsoft.Office"
 
 Write-Host ""
 Write-Host "--- Informatik ---"

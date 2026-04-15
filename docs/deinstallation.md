@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Deinstallation
-nav_order: 12
+title: ⭐ Deinstallation
+nav_order: 6
 ---
 
 # Deinstallation (brew / winget)
@@ -28,6 +28,11 @@ brew uninstall --cask safe-exam-browser
 brew uninstall --cask fiji
 brew uninstall --cask musescore
 brew uninstall --cask blender
+brew uninstall --cask ape
+brew uninstall --cask cellprofiler
+brew uninstall --cask mega
+brew uninstall --cask prism
+brew uninstall --cask geogebra
 brew uninstall --cask adobe-creative-cloud
 ```
 
@@ -125,19 +130,20 @@ echo ""
 
 casks=(
   safe-exam-browser
-  visual-studio-code
-  anaconda
-  fiji
-  musescore
-  blender
   adobe-creative-cloud
-  geogebra-classic
+  blender
+  ape
+  fiji  
+  cellprofiler
+  mega
+  prism
+  visual-studio-code
+  filius
   geogebra
+  musescore
 )
 
 formulas=(
-  git
-  sqlite
   python@3.13
 )
 
@@ -168,8 +174,6 @@ $apps = @(
   "ETHZurich.SafeExamBrowser",
   "Microsoft.VisualStudioCode",
   "Python.Python.3.13",
-  "Git.Git",
-  "Anaconda.Anaconda3",
   "GeoGebra.GeoGebra.Classic.6",
   "Musescore.Musescore",
   "BlenderFoundation.Blender",

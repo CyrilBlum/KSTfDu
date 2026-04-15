@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Webapplikationen
-parent: Fachschaften
-nav_order: 9
+nav_order: 4.5
 ---
 
 # Webapplikationen

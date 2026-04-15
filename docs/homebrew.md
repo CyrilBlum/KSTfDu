@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Homebrew (macOS)
-nav_order: 12
+title: Homebrew
+nav_order: 2
 ---
 
 # Homebrew (nur macOS)

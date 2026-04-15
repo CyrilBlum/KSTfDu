@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Schnellinstallation
-nav_order: 2
+title: ⭐ Schnellinstallation
+nav_order: 3
 ---
 
 # Schnellinstallation
@@ -32,23 +32,23 @@ brew update
 
 # Formulas
 formulas=(
-  git
-  python@3.13
+  python3
 )
 
 # Casks
 casks=(
   safe-exam-browser
-  visual-studio-code
-  anaconda
+  adobe-creative-cloud
+  blender
   ape
-  fiji
+  fiji  
   cellprofiler
   mega
   prism
+  visual-studio-code
+  filius
+  geogebra
   musescore
-  blender
-  adobe-creative-cloud
 )
 
 ok=0
@@ -89,15 +89,6 @@ echo ""
 echo "--- Casks ---"
 for p in "${casks[@]}"; do install_cask "$p"; done
 
-echo ""
-echo "Versuche GeoGebra..."
-if brew install --cask geogebra-classic >/dev/null 2>&1 || brew install --cask geogebra >/dev/null 2>&1; then
-  echo "✅ GeoGebra installiert"
-  ok=$((ok + 1))
-else
-  echo "❌ GeoGebra nicht via brew installiert (ggf. manuell)"
-  fail=$((fail + 1))
-fi
 
 echo ""
 echo "========================================"
@@ -129,7 +120,10 @@ Folgende Programme ggf. manuell installieren (je nach Fach / Lizenz):
 ```powershell
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Schnellinstallation – Windows"         -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
+WriFiji.ImageJ",
+  "iGEM.MEGA.12",
+  "StefanFreischlad.Filius",
+  "te-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 $apps = @(
