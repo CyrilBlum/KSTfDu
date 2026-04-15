@@ -172,12 +172,16 @@ Write-Host ""
 
 $apps = @(
   "ETHZurich.SafeExamBrowser",
+  "Adobe.CreativeCloud",
+  "BlenderFoundation.Blender",
+  "Fiji.ImageJ",
+  "iGEM.MEGA.12",
+  "GraphPad.Prism",
   "Microsoft.VisualStudioCode",
   "Python.Python.3.13",
+  "StefanFreischlad.Filius",
   "GeoGebra.GeoGebra.Classic.6",
-  "Musescore.Musescore",
-  "BlenderFoundation.Blender",
-  "Adobe.CreativeCloud"
+  "Musescore.Musescore"
 )
 
 foreach ($id in $apps) {

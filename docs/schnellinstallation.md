@@ -102,21 +102,22 @@ echo "========================================"
 ```powershell
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Schnellinstallation – Windows"         -ForegroundColor Cyan
-WriFiji.ImageJ",
-  "iGEM.MEGA.12",
-  "StefanFreischlad.Filius",
-  "te-Host "========================================" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 $apps = @(
+  "Microsoft.Office",
   "ETHZurich.SafeExamBrowser",
+  "Adobe.CreativeCloud",
+  "BlenderFoundation.Blender",
+  "Fiji.ImageJ",
+  "iGEM.MEGA.12",
+  "GraphPad.Prism",
   "Microsoft.VisualStudioCode",
   "Python.Python.3.13",
-  "Git.Git",
+  "StefanFreischlad.Filius",
   "GeoGebra.GeoGebra.Classic.6",
-  "Musescore.Musescore",
-  "BlenderFoundation.Blender",
-  "Adobe.CreativeCloud"
+  "Musescore.Musescore"
 )
 
 $ok = 0

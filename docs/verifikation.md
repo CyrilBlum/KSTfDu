@@ -173,22 +173,27 @@ function Check-Command {
 }
 
 Write-Host "--- Alle Fächer ---"
-Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
 Check-Winget "Microsoft Office"     "Microsoft.Office"
+Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
+
+Write-Host ""
+Write-Host "--- Bildnerisches Gestalten ---"
+Check-Winget "Adobe Creative Cloud" "Adobe.CreativeCloud"
+Check-Winget "Blender"              "BlenderFoundation.Blender"
+
+Write-Host ""
+Write-Host "--- Biologie ---"
+Check-Winget   "Fiji (ImageJ)"        "Fiji.ImageJ"
+Check-Path     "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
+Check-Path     "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
+Check-Winget   "MEGA"                 "iGEM.MEGA.12"
+Check-Winget   "GraphPad Prism"       "GraphPad.Prism"
 
 Write-Host ""
 Write-Host "--- Informatik ---"
 Check-Winget "VS Code"              "Microsoft.VisualStudioCode"
 Check-Winget "Python 3"             "Python.Python.3.13"
-Check-Path   "Filius"               "$env:ProgramFiles\Filius\Filius.exe"
-
-Write-Host ""
-Write-Host "--- Biologie ---"
-Check-Path   "Fiji (ImageJ)"        "$env:ProgramFiles\Fiji.app\ImageJ-win64.exe"
-Check-Path   "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
-Check-Path   "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
-Check-Glob   "MEGA"                 "$env:ProgramFiles\MEGA*\mega.exe"
-Check-Glob   "GraphPad Prism"       "$env:ProgramFiles\GraphPad\Prism *\Prism.exe"
+Check-Winget   "Filius"              "StefanFreischlad.Filius"
 
 Write-Host ""
 Write-Host "--- Mathematik ---"
@@ -197,11 +202,6 @@ Check-Winget "GeoGebra"             "GeoGebra.GeoGebra.Classic.6"
 Write-Host ""
 Write-Host "--- Musik ---"
 Check-Winget "MuseScore"            "Musescore.Musescore"
-
-Write-Host ""
-Write-Host "--- Bildnerisches Gestalten ---"
-Check-Winget "Adobe Creative Cloud" "Adobe.CreativeCloud"
-Check-Winget "Blender"              "BlenderFoundation.Blender"
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
