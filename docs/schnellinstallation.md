@@ -111,7 +111,6 @@ $apps = @(
   "ETHZurich.SafeExamBrowser",
   "Adobe.CreativeCloud",
   "BlenderFoundation.Blender",
-  "Fiji.ImageJ",
   "iGEM.MEGA.12",
   "GraphPad.Prism",
   "Microsoft.VisualStudioCode",

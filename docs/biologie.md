@@ -62,9 +62,7 @@ brew install --cask cellprofiler
 
 ### Windows
 
-CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org)
-
-Die Windows-Version herunterladen und installieren.
+CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org). Die Windows-Version herunterladen, das `exe`-File anklicken und das Programm installieren.
 
 ---
 
@@ -105,4 +103,4 @@ Download unter: [graphpad.com](https://www.graphpad.com)
 winget install -e --id GraphPad.Prism --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
-Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
+Die Aktivierung des Programms erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
