@@ -35,7 +35,7 @@ Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Ado
 ### Windows
 
 ```powershell
-winget install -e --id Adobe.CreativeCloud --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Adobe.CreativeCloud --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Adobe-ID anmelden.
@@ -66,5 +66,5 @@ brew install --cask blender
 ### Windows
 
 ```powershell
-winget install -e --id BlenderFoundation.Blender --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id BlenderFoundation.Blender --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```

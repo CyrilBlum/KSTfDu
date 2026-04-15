@@ -49,7 +49,7 @@ brew install --cask fiji
 ### Windows
 
 ```powershell
-winget install -e --id Fiji.ImageJ --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Fiji.ImageJ --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 ---
@@ -85,7 +85,7 @@ brew install --cask mega
 ### Windows
 
 ```powershell
-winget install -e --id iGEM.MEGA.12 --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id iGEM.MEGA.12 --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 ---
@@ -106,7 +106,7 @@ Download unter: [graphpad.com](https://www.graphpad.com)
 ### Windows
 
 ```powershell
-winget install -e --id GraphPad.Prism --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id GraphPad.Prism --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 Die Installation erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.

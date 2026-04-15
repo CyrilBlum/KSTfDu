@@ -30,5 +30,5 @@ brew install --cask musescore
 ### Windows
 
 ```powershell
-winget install -e --id Musescore.Musescore --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Musescore.Musescore --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```

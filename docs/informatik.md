@@ -30,7 +30,7 @@ brew install --cask visual-studio-code
 ### Windows
 
 ```powershell
-winget install -e --id Microsoft.VisualStudioCode --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Microsoft.VisualStudioCode --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 ---
@@ -48,7 +48,7 @@ brew install python3
 ### Windows
 
 ```powershell
-winget install -e --id Python.Python.3.13 --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id Python.Python.3.13 --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 ---
@@ -68,5 +68,5 @@ Die macOS-Version herunterladen und installieren.
 ### Windows
 
 ```powershell
-winget install -e --id StefanFreischlad.Filius --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id StefanFreischlad.Filius --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```

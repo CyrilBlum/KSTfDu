@@ -126,7 +126,7 @@ $fail = 0
 
 foreach ($id in $apps) {
   Write-Host "Installiere $id ..."
-  winget install --id $id -e --accept-package-agreements --accept-source-agreements
+  winget install --id $id -e --accept-package-agreements --accept-source-agreements --silent
   if ($LASTEXITCODE -eq 0) {
     Write-Host "✅ $id" -ForegroundColor Green
     $ok++

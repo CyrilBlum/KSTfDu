@@ -32,7 +32,7 @@ brew install --cask safe-exam-browser
 ### Windows
 
 ```powershell
-winget install -e --id ETHZurich.SafeExamBrowser --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id ETHZurich.SafeExamBrowser --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
 ```
 
 ---
