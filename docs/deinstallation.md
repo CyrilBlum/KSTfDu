@@ -180,7 +180,7 @@ $apps = @(
   "Microsoft.VisualStudioCode",
   "Python.Python.3.13",
   "StefanFreischlad.Filius",
-  "GeoGebra.GeoGebra.Classic.6",
+  "GeoGebra.Classic",
   "Musescore.Musescore"
 )
 

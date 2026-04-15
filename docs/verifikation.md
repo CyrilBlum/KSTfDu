@@ -196,7 +196,7 @@ Check-Winget   "Filius"              "StefanFreischlad.Filius"
 
 Write-Host ""
 Write-Host "--- Mathematik ---"
-Check-Winget "GeoGebra"             "GeoGebra.GeoGebra.Classic.6"
+Check-Winget "GeoGebra"             "GeoGebra.Classic"
 
 Write-Host ""
 Write-Host "--- Musik ---"

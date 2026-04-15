@@ -33,5 +33,5 @@ brew install --cask geogebra
 ### Windows
 
 ```powershell
-winget install -e --id GeoGebra.GeoGebra.Classic.6 --scope machine --silent --accept-package-agreements --accept-source-agreements
+winget install -e --id GeoGebra.Classic --scope machine --silent --accept-package-agreements --accept-source-agreements
 ```
