@@ -53,8 +53,4 @@ Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lize
 
 ### Windows
 
-```powershell
-winget install -e --id Microsoft.Office --scope machine --silent --accept-package-agreements --accept-source-agreements
-```
-
-Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
+Microsoft 365 sollte unter Windows bereits vorinstalliert sein. Starten Sie eine beliebige Anwendung aus dem Microsoft 365 Paket (z.B. Word).Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.

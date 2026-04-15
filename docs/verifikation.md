@@ -173,7 +173,6 @@ function Check-Command {
 }
 
 Write-Host "--- Alle Fächer ---"
-Check-Winget "Microsoft Office"     "Microsoft.Office"
 Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
 
 Write-Host ""

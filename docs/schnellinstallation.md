@@ -7,6 +7,7 @@ nav_order: 3
 # Schnellinstallation
 
 Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für macOS** und **einem Block für Windows**. 
+
 ---
 
 ## macOS (Homebrew)
@@ -34,6 +35,7 @@ formulas=(
 
 # Casks
 casks=(
+  microsoft-office
   safe-exam-browser
   adobe-creative-cloud
   blender
@@ -106,7 +108,6 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 $apps = @(
-  "Microsoft.Office",
   "ETHZurich.SafeExamBrowser",
   "Adobe.CreativeCloud",
   "BlenderFoundation.Blender",
