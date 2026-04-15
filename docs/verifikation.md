@@ -182,7 +182,7 @@ Check-Winget "Blender"              "BlenderFoundation.Blender"
 
 Write-Host ""
 Write-Host "--- Biologie ---"
-Check-Winget   "Fiji (ImageJ)"        "Fiji.ImageJ"
+Check-Path     "Fiji (ImageJ)"        "$env:ProgramFiles\Fiji\fiji-windows-x64.exe"
 Check-Path     "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
 Check-Path     "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
 Check-Winget   "MEGA"                 "iGEM.MEGA.12"

@@ -141,3 +141,8 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 ```
+
+Achtung: nicht alle Programme sind über winget verfügbar. Alle Programme, die nicht über winget installiert werden können, müssen manuell installiert werden:
+- **ApE**: Download unter [jorgensen.biology.utah.edu/wayned/ape](https://jorgensen.biology.utah.edu/wayned/ape). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
+- **CellProfiler**: Download unter [cellprofiler.org](https://cellprofiler.org). Exe-Datei herunterladen, anklicken und das Programm installieren.
+- **ImageJ / Fiji**: Download unter [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.

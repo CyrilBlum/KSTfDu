@@ -30,9 +30,7 @@ brew install --cask ape
 
 ### Windows
 
-ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/)
-
-Die Windows-Version herunterladen und installieren.
+ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
 
 ---
 
@@ -48,9 +46,7 @@ brew install --cask fiji
 
 ### Windows
 
-```powershell
-winget install -e --id Fiji.ImageJ --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
-```
+Fiji (ImageJ) ist nicht über winget verfügbar. Download unter: [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.
 
 ---
 
