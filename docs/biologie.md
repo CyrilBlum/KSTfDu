@@ -21,16 +21,15 @@ Programme für den Biologieunterricht. Die meisten Programme werden im Rahmen de
 
 ApE ist ein kostenloser Plasmid-Editor für die Molekularbiologie.
 
+### Windows
+
+ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
+
 ### macOS
 
 ```bash
 brew install --cask ape
 ```
-
-
-### Windows
-
-ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.edu/wayned/ape](http://jorgensen.biology.utah.edu/wayned/ape/). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
 
 ---
 
@@ -38,15 +37,15 @@ ApE ist nicht über winget verfügbar. Download unter: [jorgensen.biology.utah.e
 
 ImageJ (bzw. die erweiterte Distribution Fiji) ist ein Programm für die (semi-automatische) Bildanalyse.
 
+### Windows
+
+Fiji (ImageJ) ist nicht über winget verfügbar. Download unter: [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.
+
 ### macOS
 
 ```bash
 brew install --cask fiji
 ```
-
-### Windows
-
-Fiji (ImageJ) ist nicht über winget verfügbar. Download unter: [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.
 
 ---
 
@@ -54,15 +53,15 @@ Fiji (ImageJ) ist nicht über winget verfügbar. Download unter: [fiji.sc](https
 
 CellProfiler ist eine Software für die automatische Bildanalyse von Zellen.
 
+### Windows
+
+CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org). Die Windows-Version herunterladen, das `exe`-File anklicken und das Programm installieren.
+
 ### macOS
 
 ```bash
 brew install --cask cellprofiler
 ```
-
-### Windows
-
-CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.org](https://cellprofiler.org). Die Windows-Version herunterladen, das `exe`-File anklicken und das Programm installieren.
 
 ---
 
@@ -70,16 +69,16 @@ CellProfiler ist nicht über winget verfügbar. Download unter: [cellprofiler.or
 
 MEGA (Molecular Evolutionary Genetics Analysis) wird für Alignments und phylogenetische Bäume verwendet.
 
-### macOS
-
-```bash
-brew install --cask mega
-```
-
 ### Windows
 
 ```powershell
 winget install -e --id iGEM.MEGA.12 --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+### macOS
+
+```bash
+brew install --cask mega
 ```
 
 ---
@@ -88,15 +87,6 @@ winget install -e --id iGEM.MEGA.12 --scope machine --silent --accept-package-ag
 
 GraphPad Prism ist ein kostenpflichtiges Programm zur Erstellung wissenschaftlicher Grafiken und Statistiken.
 
-### macOS
-
-
-```bash
-brew install --cask prism
-```
-
-Download unter: [graphpad.com](https://www.graphpad.com)
-
 ### Windows
 
 ```powershell
@@ -104,3 +94,11 @@ winget install -e --id GraphPad.Prism --scope machine --silent --accept-package-
 ```
 
 Die Aktivierung des Programms erfolgt über eine institutionelle Lizenz. Für den Zugang an die Ansprechpersonen wenden.
+
+### macOS
+
+```bash
+brew install --cask prism
+```
+
+Download unter: [graphpad.com](https://www.graphpad.com)

@@ -14,7 +14,7 @@ Homebrew ist der Paketmanager für macOS. Er wird für alle weiteren Installatio
 
 ## Installation
 
-Öffne ein Terminal (*Cmd + Leertaste → „Terminal"* eingeben und öffnen) und führe folgenden Befehl aus:
+Öffnen Sie ein Terminal (*Cmd + Leertaste → „Terminal"* eingeben und öffnen) und führen Sie folgenden Befehl aus:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -31,8 +31,8 @@ Auf neueren Macs mit Apple-Silicon-Chip installiert Homebrew standardmässig nac
 ```
 ==> Next steps:
 - Run these commands in your terminal to add Homebrew to your PATH:
-    echo >> /Users/deinname/.zprofile
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/deinname/.zprofile
+    echo >> /Users/<benutzername>/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<benutzername>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 

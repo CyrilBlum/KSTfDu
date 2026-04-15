@@ -24,18 +24,18 @@ Die Adobe Creative Cloud umfasst alle Adobe-Programme (Photoshop, Illustrator, I
 
 Die Installation der Creative Cloud erfolgt am Einführungshalbtag.
 
-### macOS
-
-```bash
-brew install --cask adobe-creative-cloud
-```
-
-Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Adobe-ID anmelden.
-
 ### Windows
 
 ```powershell
 winget install -e --id Adobe.CreativeCloud --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Adobe-ID anmelden.
+
+### macOS
+
+```bash
+brew install --cask adobe-creative-cloud
 ```
 
 Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Adobe-ID anmelden.
@@ -57,14 +57,14 @@ Nach der Installation die Creative Cloud-App öffnen und mit der schulischen Ado
 
 Blender ist eine kostenlose, professionelle 3D-Grafiksuite für Modellierung, Texturierung und Animation.
 
-### macOS
-
-```bash
-brew install --cask blender
-```
-
 ### Windows
 
 ```powershell
 winget install -e --id BlenderFoundation.Blender --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+### macOS
+
+```bash
+brew install --cask blender
 ```

@@ -10,9 +10,108 @@ Mit den folgenden Skripten kann überprüft werden, ob alle Programme korrekt in
 
 ---
 
+## Windows
+
+Öffnen Sie **PowerShell als Administrator** (*Windows-Taste → „PowerShell" → Rechtsklick → „Als Administrator ausführen"*) und führen Sie folgenden Befehl aus:
+
+```powershell
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host " Installationscheck – Windows"          -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host ""
+
+$ok   = 0
+$fail = 0
+
+function Check-Winget {
+    param([string]$Label, [string]$Id)
+    $result = winget list --id $Id --accept-source-agreements 2>&1
+    if ($result -match [regex]::Escape($Id)) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht installiert (winget-ID: $Id)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
+function Check-Path {
+    param([string]$Label, [string]$ExePath)
+    if (Test-Path $ExePath) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht gefunden ($ExePath)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
+function Check-Glob {
+    param([string]$Label, [string]$GlobPattern)
+    $found = Get-Item $GlobPattern -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($found) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht gefunden ($GlobPattern)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
+function Check-Command {
+    param([string]$Label, [string]$Cmd)
+    if (Get-Command $Cmd -ErrorAction SilentlyContinue) {
+        Write-Host "✅  $Label" -ForegroundColor Green
+        $script:ok++
+    } else {
+        Write-Host "❌  $Label – nicht gefunden (Befehl: $Cmd)" -ForegroundColor Red
+        $script:fail++
+    }
+}
+
+Write-Host "--- Alle Fächer ---"
+Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
+
+Write-Host ""
+Write-Host "--- Bildnerisches Gestalten ---"
+Check-Winget "Adobe Creative Cloud" "Adobe.CreativeCloud"
+Check-Winget "Blender"              "BlenderFoundation.Blender"
+
+Write-Host ""
+Write-Host "--- Biologie ---"
+Check-Path     "Fiji (ImageJ)"        "$env:ProgramFiles\Fiji\fiji-windows-x64.exe"
+Check-Path     "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
+Check-Path     "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
+Check-Winget   "MEGA"                 "iGEM.MEGA.12"
+Check-Winget   "GraphPad Prism"       "GraphPad.Prism"
+
+Write-Host ""
+Write-Host "--- Informatik ---"
+Check-Winget "VS Code"              "Microsoft.VisualStudioCode"
+Check-Winget "Python 3"             "Python.Python.3.13"
+Check-Winget   "Filius"              "StefanFreischlad.Filius"
+
+Write-Host ""
+Write-Host "--- Mathematik ---"
+Check-Winget "GeoGebra"             "GeoGebra.Classic"
+
+Write-Host ""
+Write-Host "--- Musik ---"
+Check-Winget "MuseScore"            "Musescore.Musescore"
+
+Write-Host ""
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host " Ergebnis: $ok ✅  installiert, $fail ❌  fehlend" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+```
+
+> **Hinweis:** Das Skript kann direkt in PowerShell eingefügt und ausgeführt werden. Programme, die nur als Download verfügbar sind (ApE, CellProfiler, MEGA usw.), werden anhand ihres Standard-Installationspfades geprüft – der Pfad kann je nach Version oder Installationsort leicht abweichen.
+
+---
+
 ## macOS
 
-Öffne ein Terminal (*Cmd + Leertaste → „Terminal"*) und führe folgenden Befehl aus:
+Öffnen Sie ein Terminal (*Cmd + Leertaste → „Terminal"*) und führen Sie folgenden Befehl aus:
 
 ```bash
 echo "========================================"
@@ -111,102 +210,3 @@ echo "========================================"
 ```
 
 > **Hinweis:** Das Skript kann direkt in das Terminal kopiert und mit der Eingabetaste ausgeführt werden. Programme, die nur als Download verfügbar sind (ApE, CellProfiler usw.), werden anhand ihres Installationspfades geprüft – der Pfad kann je nach Version leicht abweichen.
-
----
-
-## Windows
-
-Öffne **PowerShell als Administrator** (*Windows-Taste → „PowerShell" → Rechtsklick → „Als Administrator ausführen"*) und führe folgenden Befehl aus:
-
-```powershell
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host " Installationscheck – Windows"          -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host ""
-
-$ok   = 0
-$fail = 0
-
-function Check-Winget {
-    param([string]$Label, [string]$Id)
-    $result = winget list --id $Id --accept-source-agreements 2>&1
-    if ($result -match [regex]::Escape($Id)) {
-        Write-Host "✅  $Label" -ForegroundColor Green
-        $script:ok++
-    } else {
-        Write-Host "❌  $Label – nicht installiert (winget-ID: $Id)" -ForegroundColor Red
-        $script:fail++
-    }
-}
-
-function Check-Path {
-    param([string]$Label, [string]$ExePath)
-    if (Test-Path $ExePath) {
-        Write-Host "✅  $Label" -ForegroundColor Green
-        $script:ok++
-    } else {
-        Write-Host "❌  $Label – nicht gefunden ($ExePath)" -ForegroundColor Red
-        $script:fail++
-    }
-}
-
-function Check-Glob {
-    param([string]$Label, [string]$GlobPattern)
-    $found = Get-Item $GlobPattern -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($found) {
-        Write-Host "✅  $Label" -ForegroundColor Green
-        $script:ok++
-    } else {
-        Write-Host "❌  $Label – nicht gefunden ($GlobPattern)" -ForegroundColor Red
-        $script:fail++
-    }
-}
-
-function Check-Command {
-    param([string]$Label, [string]$Cmd)
-    if (Get-Command $Cmd -ErrorAction SilentlyContinue) {
-        Write-Host "✅  $Label" -ForegroundColor Green
-        $script:ok++
-    } else {
-        Write-Host "❌  $Label – nicht gefunden (Befehl: $Cmd)" -ForegroundColor Red
-        $script:fail++
-    }
-}
-
-Write-Host "--- Alle Fächer ---"
-Check-Winget "SafeExamBrowser"      "ETHZurich.SafeExamBrowser"
-
-Write-Host ""
-Write-Host "--- Bildnerisches Gestalten ---"
-Check-Winget "Adobe Creative Cloud" "Adobe.CreativeCloud"
-Check-Winget "Blender"              "BlenderFoundation.Blender"
-
-Write-Host ""
-Write-Host "--- Biologie ---"
-Check-Path     "Fiji (ImageJ)"        "$env:ProgramFiles\Fiji\fiji-windows-x64.exe"
-Check-Path     "ApE"                  "$env:ProgramFiles\ApE\ApE.exe"
-Check-Path     "CellProfiler"         "$env:ProgramFiles\CellProfiler\CellProfiler.exe"
-Check-Winget   "MEGA"                 "iGEM.MEGA.12"
-Check-Winget   "GraphPad Prism"       "GraphPad.Prism"
-
-Write-Host ""
-Write-Host "--- Informatik ---"
-Check-Winget "VS Code"              "Microsoft.VisualStudioCode"
-Check-Winget "Python 3"             "Python.Python.3.13"
-Check-Winget   "Filius"              "StefanFreischlad.Filius"
-
-Write-Host ""
-Write-Host "--- Mathematik ---"
-Check-Winget "GeoGebra"             "GeoGebra.Classic"
-
-Write-Host ""
-Write-Host "--- Musik ---"
-Check-Winget "MuseScore"            "Musescore.Musescore"
-
-Write-Host ""
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host " Ergebnis: $ok ✅  installiert, $fail ❌  fehlend" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
-```
-
-> **Hinweis:** Das Skript kann direkt in PowerShell eingefügt und ausgeführt werden. Programme, die nur als Download verfügbar sind (ApE, CellProfiler, MEGA usw.), werden anhand ihres Standard-Installationspfades geprüft – der Pfad kann je nach Version oder Installationsort leicht abweichen.

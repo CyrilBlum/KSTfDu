@@ -1,5 +1,5 @@
 <div align="center">
-    <h3>KSTfDü Software-Installation</h3>
+    <h3>KST FDü Software-Installation</h3>
     <br>
     Installationsanleitungen für Kantonsschule TfDü<br>
     <br>
@@ -7,7 +7,7 @@
 
 ## Übersicht
 
-KSTfDü Software-Installation ist ein umfassendes Installationsanleitung-Repository für alle an der Kantonsschule Stadelhofen Filiale Dübendorf verwendeten Softwaretools. Das Repository bietet Schritt-für-Schritt-Anweisungen für macOS (Homebrew) und Windows (winget) über neun Fachbereiche hinweg.
+KST FDü Software-Installation ist ein umfassendes Installationsanleitung-Repository für alle an der Kantonsschule Stadelhofen Filiale Dübendorf verwendeten Softwaretools. Das Repository bietet Schritt-für-Schritt-Anweisungen für Windows (winget) und macOS (Homebrew) über neun Fachbereiche hinweg.
 
 ## Repository-Struktur
 
@@ -16,7 +16,7 @@ Installationsanleitungen sind nach Fachbereichen organisiert:
 - `informatik.md` behandelt Informatik-Tools (VS Code, Python, Git, Anaconda, SQLite, Filius).
 - `biologie.md` enthält Biologie-Software (ApE, ImageJ, CellProfiler, MEGA, GraphPad Prism).
 - `chemie.md` listet Chemie-Tools auf (ChemDraw, Chemix, Römpp).
-- `mathematik.md` enthält Mathematik-Software (GeoGebra, Matlab).
+- `mathematik.md` enthält Mathematik-Software (GeoGebra).
 - `musik.md` behandelt Musikproduktions-Tools (MuseScore, Ableton, GarageBand, Logic Pro, Dorico Pro).
 - `bg.md` listet Design-Software auf (Adobe Creative Cloud, Blender, Tinkercad).
 - `sport.md` behandelt Sport-Apps (BAM, Coach Now, Polar GoFit, SprintTimer).
@@ -33,13 +33,13 @@ https://cyrilblum.github.io/KSTfDu/
 
 1. Besuchen Sie die oben verlinkte Website oder betrachten Sie die Anleitungen im `docs/`-Ordner dieses Repositories.
 2. Wählen Sie Ihren Fachbereich aus dem Navigationsmenü.
-3. Folgen Sie den plattformspezifischen Anweisungen (macOS oder Windows).
+3. Folgen Sie den plattformspezifischen Anweisungen (Windows oder macOS).
 4. Kopieren Sie Befehle direkt aus Code-Blöcken für einfache Ausführung.
 
 ## Systemanforderungen
 
-- **macOS:** Homebrew muss installiert sein. Installationsanweisungen finden Sie auf der Informatik-Seite.
 - **Windows:** Befehle müssen in **PowerShell als Administrator** ausgeführt werden.
+- **macOS:** Homebrew muss installiert sein. Installationsanweisungen finden Sie auf der Informatik-Seite.
 - **Webapplikationen:** Keine Installation erforderlich; direkter Zugriff im Browser.
 
 ## Beitragen
@@ -53,4 +53,4 @@ Um Installationsanleitungen hinzuzufügen oder zu aktualisieren:
 ## Kontakt
 
 Bei Fragen oder zum Anfordern neuer Installationsanleitungen:
-- [Cyril Blum](mailto:cyril.blum@edu.zh.ch), Kantonsschule Stadelhofen Filiale Dübendorf (KSTfDü)
+- [Cyril Blum](mailto:cyril.blum@edu.zh.ch), Kantonsschule Stadelhofen Filiale Dübendorf (KST FDü)

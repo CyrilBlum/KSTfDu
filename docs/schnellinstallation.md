@@ -6,13 +6,64 @@ nav_order: 3
 
 # Schnellinstallation
 
-Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für macOS** und **einem Block für Windows**. 
+Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für Windows** und **einem Block für macOS**.
+
+---
+
+## Windows (winget)
+
+Öffnen Sie **PowerShell als Administrator** und führen Sie den gesamten Block aus:
+
+```powershell
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host " Schnellinstallation – Windows"         -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host ""
+
+$apps = @(
+  "ETHZurich.SafeExamBrowser",
+  "Adobe.CreativeCloud",
+  "BlenderFoundation.Blender",
+  "iGEM.MEGA.12",
+  "GraphPad.Prism",
+  "Microsoft.VisualStudioCode",
+  "Python.Python.3.13",
+  "StefanFreischlad.Filius",
+  "GeoGebra.Classic",
+  "Musescore.Musescore"
+)
+
+$ok = 0
+$fail = 0
+
+foreach ($id in $apps) {
+  Write-Host "Installiere $id ..."
+  winget install --id $id -e --accept-package-agreements --accept-source-agreements --silent
+  if ($LASTEXITCODE -eq 0) {
+    Write-Host "✅ $id" -ForegroundColor Green
+    $ok++
+  } else {
+    Write-Host "❌ $id" -ForegroundColor Red
+    $fail++
+  }
+}
+
+Write-Host ""
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+```
+
+Achtung: nicht alle Programme sind über winget verfügbar. Alle Programme, die nicht über winget installiert werden können, müssen manuell installiert werden:
+- **ApE**: Download unter [jorgensen.biology.utah.edu/wayned/ape](https://jorgensen.biology.utah.edu/wayned/ape). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
+- **CellProfiler**: Download unter [cellprofiler.org](https://cellprofiler.org). Exe-Datei herunterladen, anklicken und das Programm installieren.
+- **ImageJ / Fiji**: Download unter [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.
 
 ---
 
 ## macOS (Homebrew)
 
-Öffne Terminal und führe den gesamten Block aus:
+Öffnen Sie Terminal und führen Sie den gesamten Block aus:
 
 ```bash
 echo "========================================"
@@ -41,7 +92,7 @@ casks=(
   adobe-creative-cloud
   blender
   ape
-  fiji  
+  fiji
   cellprofiler
   mega
   prism
@@ -89,60 +140,8 @@ echo ""
 echo "--- Casks ---"
 for p in "${casks[@]}"; do install_cask "$p"; done
 
-
 echo ""
 echo "========================================"
 echo " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen"
 echo "========================================"
 ```
-
----
-
-## Windows (winget)
-
-Öffne **PowerShell als Administrator** und führe den gesamten Block aus:
-
-```powershell
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host " Schnellinstallation – Windows"         -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host ""
-
-$apps = @(
-  "ETHZurich.SafeExamBrowser",
-  "Adobe.CreativeCloud",
-  "BlenderFoundation.Blender",
-  "iGEM.MEGA.12",
-  "GraphPad.Prism",
-  "Microsoft.VisualStudioCode",
-  "Python.Python.3.13",
-  "StefanFreischlad.Filius",
-  "GeoGebra.Classic",
-  "Musescore.Musescore"
-)
-
-$ok = 0
-$fail = 0
-
-foreach ($id in $apps) {
-  Write-Host "Installiere $id ..."
-  winget install --id $id -e --accept-package-agreements --accept-source-agreements --silent
-  if ($LASTEXITCODE -eq 0) {
-    Write-Host "✅ $id" -ForegroundColor Green
-    $ok++
-  } else {
-    Write-Host "❌ $id" -ForegroundColor Red
-    $fail++
-  }
-}
-
-Write-Host ""
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host " Ergebnis: $ok ✅  erfolgreich, $fail ❌  fehlgeschlagen" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
-```
-
-Achtung: nicht alle Programme sind über winget verfügbar. Alle Programme, die nicht über winget installiert werden können, müssen manuell installiert werden:
-- **ApE**: Download unter [jorgensen.biology.utah.edu/wayned/ape](https://jorgensen.biology.utah.edu/wayned/ape). Nach dem Download: Das heruntergeladene `zip`-Archiv entpacken, den Ordner in `ApE` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\ApE` verschieben.
-- **CellProfiler**: Download unter [cellprofiler.org](https://cellprofiler.org). Exe-Datei herunterladen, anklicken und das Programm installieren.
-- **ImageJ / Fiji**: Download unter [fiji.sc](https://fiji.sc). Nach dem Download: Die heruntergeladene `zip`-Datei entpacken, den Ordner in `Fiji` umbenennen und diesen, sowie dessen Inhalt, in `C:\Program Files\Fiji` verschieben.

@@ -21,14 +21,14 @@ Programme für den Musikunterricht. Einige Programme sind lizenzpflichtig oder n
 
 MuseScore ist ein kostenloses Notationsprogramm für Schülerinnen.
 
-### macOS
-
-```bash
-brew install --cask musescore
-```
-
 ### Windows
 
 ```powershell
 winget install -e --id Musescore.Musescore --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+### macOS
+
+```bash
+brew install --cask musescore
 ```

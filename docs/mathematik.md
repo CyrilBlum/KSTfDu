@@ -13,8 +13,7 @@ Programme für den Mathematikunterricht.
 
 | Programm | Ansprechperson |
 |---|---|
-| GeoGebra Calculator Suite, Matlab | Samuel Achermann, Radivoje Bankovic |
-| Geometry Sketch | Samuel Achermann, Radivoje Bankovic (nur für Lehrpersonen) |
+| GeoGebra Calculator Suite | Samuel Achermann, Radivoje Bankovic |
 
 ---
 
@@ -24,14 +23,14 @@ GeoGebra ist eine kostenlose Geometrie-App mit integriertem Rechner. Sie steht a
 
 **Web:** [geogebra.org/calculator](https://www.geogebra.org/calculator) – keine Installation nötig.
 
-### macOS
-
-```bash
-brew install --cask geogebra
-```
-
 ### Windows
 
 ```powershell
 winget install -e --id GeoGebra.Classic --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+### macOS
+
+```bash
+brew install --cask geogebra
 ```

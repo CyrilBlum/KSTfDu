@@ -8,13 +8,56 @@ nav_order: 6
 
 Mit den folgenden Befehlen können installierte Programme sauber entfernt werden.
 
-> **Hinweis:** Führe die Befehle nur für Programme aus, die wirklich entfernt werden sollen.
+> **Hinweis:** Führen Sie die Befehle nur für Programme aus, die wirklich entfernt werden sollen.
+
+---
+
+## Windows (winget)
+
+Öffnen Sie **PowerShell als Administrator** und verwenden Sie:
+
+### Einzelnes Programm entfernen
+
+```powershell
+winget uninstall --id Microsoft.VisualStudioCode -e
+```
+
+Weitere Beispiele:
+```powershell
+winget uninstall --id ETHZurich.SafeExamBrowser -e
+winget uninstall --id Python.Python.3.13 -e
+winget uninstall --id Musescore.Musescore -e
+winget uninstall --id BlenderFoundation.Blender -e
+winget uninstall --id Adobe.CreativeCloud -e
+```
+
+### Mehrere Programme auf einmal entfernen
+
+```powershell
+$apps = @(
+  "Microsoft.VisualStudioCode",
+  "ETHZurich.SafeExamBrowser",
+  "Python.Python.3.13",
+  "Musescore.Musescore",
+  "BlenderFoundation.Blender"
+)
+
+foreach ($id in $apps) {
+  winget uninstall --id $id -e
+}
+```
+
+### Installierte Programme anzeigen
+
+```powershell
+winget list
+```
 
 ---
 
 ## macOS (Homebrew)
 
-Öffne ein Terminal (*Cmd + Leertaste → „Terminal"*) und verwende:
+Öffnen Sie ein Terminal (*Cmd + Leertaste → „Terminal"*) und verwenden Sie:
 
 ### Einzelnes Programm entfernen
 
@@ -67,49 +110,6 @@ brew leaves
 
 ---
 
-## Windows (winget)
-
-Öffne **PowerShell als Administrator** und verwende:
-
-### Einzelnes Programm entfernen
-
-```powershell
-winget uninstall --id Microsoft.VisualStudioCode -e
-```
-
-Weitere Beispiele:
-```powershell
-winget uninstall --id ETHZurich.SafeExamBrowser -e
-winget uninstall --id Python.Python.3.13 -e
-winget uninstall --id Musescore.Musescore -e
-winget uninstall --id BlenderFoundation.Blender -e
-winget uninstall --id Adobe.CreativeCloud -e
-```
-
-### Mehrere Programme auf einmal entfernen
-
-```powershell
-$apps = @(
-  "Microsoft.VisualStudioCode",
-  "ETHZurich.SafeExamBrowser",
-  "Python.Python.3.13",
-  "Musescore.Musescore",
-  "BlenderFoundation.Blender"
-)
-
-foreach ($id in $apps) {
-  winget uninstall --id $id -e
-}
-```
-
-### Installierte Programme anzeigen
-
-```powershell
-winget list
-```
-
----
-
 ## Manuell installierte Programme
 
 Einige Tools wurden eventuell **nicht** über brew/winget installiert (z. B. ApE, CellProfiler, MEGA, Filius je nach Setup).  
@@ -119,49 +119,6 @@ Diese Programme müssen manuell entfernt werden:
 - **Windows:** *Einstellungen → Apps → Installierte Apps* und dort deinstallieren.
 
 ## Deinstallation aller Tools auf einmal
-
-### macOS (Homebrew)
-
-```bash
-echo "========================================"
-echo " Deinstallation aller Tools – macOS"
-echo "========================================"
-echo ""
-
-casks=(
-  safe-exam-browser
-  rectangle
-  adobe-creative-cloud
-  blender
-  ape
-  fiji  
-  cellprofiler
-  mega
-  prism
-  visual-studio-code
-  filius
-  geogebra
-  musescore
-)
-
-formulas=(
-  python@3.13
-)
-
-for p in "${casks[@]}"; do
-  brew uninstall --cask "$p" >/dev/null 2>&1 && echo "✅ entfernt: $p" || echo "ℹ️ übersprungen/nicht installiert: $p"
-done
-
-for p in "${formulas[@]}"; do
-  brew uninstall "$p" >/dev/null 2>&1 && echo "✅ entfernt: $p" || echo "ℹ️ übersprungen/nicht installiert: $p"
-done
-
-brew autoremove
-brew cleanup
-
-echo ""
-echo "Fertig. Manuell installierte Programme ggf. separat entfernen."
-```
 
 ### Windows (winget)
 
@@ -195,4 +152,47 @@ foreach ($id in $apps) {
 
 Write-Host ""
 Write-Host "Fertig. Manuell installierte Programme ggf. separat entfernen." -ForegroundColor Cyan
+```
+
+### macOS (Homebrew)
+
+```bash
+echo "========================================"
+echo " Deinstallation aller Tools – macOS"
+echo "========================================"
+echo ""
+
+casks=(
+  safe-exam-browser
+  rectangle
+  adobe-creative-cloud
+  blender
+  ape
+  fiji
+  cellprofiler
+  mega
+  prism
+  visual-studio-code
+  filius
+  geogebra
+  musescore
+)
+
+formulas=(
+  python@3.13
+)
+
+for p in "${casks[@]}"; do
+  brew uninstall --cask "$p" >/dev/null 2>&1 && echo "✅ entfernt: $p" || echo "ℹ️ übersprungen/nicht installiert: $p"
+done
+
+for p in "${formulas[@]}"; do
+  brew uninstall "$p" >/dev/null 2>&1 && echo "✅ entfernt: $p" || echo "ℹ️ übersprungen/nicht installiert: $p"
+done
+
+brew autoremove
+brew cleanup
+
+echo ""
+echo "Fertig. Manuell installierte Programme ggf. separat entfernen."
 ```

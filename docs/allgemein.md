@@ -23,16 +23,16 @@ Diese Programme werden in allen Fächern benötigt und müssen von allen Schüle
 SafeExamBrowser ist ein gesicherter Prüfungsbrowser, der während digitalen Prüfungen den Zugriff auf das Internet und andere Programme sperrt.
 
 
-### macOS
-
-```bash
-brew install --cask safe-exam-browser
-```
-
 ### Windows
 
 ```powershell
 winget install -e --id ETHZurich.SafeExamBrowser --scope machine --silent --accept-package-agreements --accept-source-agreements --silent
+```
+
+### macOS
+
+```bash
+brew install --cask safe-exam-browser
 ```
 
 ---
@@ -43,6 +43,10 @@ Microsoft 365 (Word, Excel, PowerPoint, Teams usw.) steht als Webanwendung unter
 
 - **Webzugang:** [office.com](https://www.office.com) – Login mit der schulischen E-Mail-Adresse
 
+### Windows
+
+Microsoft 365 sollte unter Windows bereits vorinstalliert sein. Starten Sie eine beliebige Anwendung aus dem Microsoft-365-Paket (z. B. Word). Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
+
 ### macOS
 
 ```bash
@@ -50,10 +54,6 @@ brew install --cask microsoft-office
 ```
 
 Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
-
-### Windows
-
-Microsoft 365 sollte unter Windows bereits vorinstalliert sein. Starten Sie eine beliebige Anwendung aus dem Microsoft 365 Paket (z.B. Word).Danach müssen Sie sich mit der schulischen E-Mail-Adresse anmelden, um die Lizenz zu aktivieren.
 
 ---
 
