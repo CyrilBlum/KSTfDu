@@ -10,6 +10,8 @@ Homebrew ist der Paketmanager für macOS. Er wird für alle weiteren Installatio
 
 **Windows-Nutzerinnen:** Diese Seite ist nicht relevant – bitte direkt zu den fachspezifischen Installationsseiten wechseln.
 
+Die Codeblöcke können einfach kopiert werden, indem Sie auf das Symbol (📋) im oberen rechnten Teil des Code-Blocks klicken. Danach können Sie den Code-Block per Cmd+V / Ctrl+V im Terminal bzw. PowerShell einfügen und mit Enter ausführen.
+
 ---
 
 ## Installation

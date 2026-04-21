@@ -16,7 +16,6 @@ Wo immer möglich werden Anleitungen für **Windows** (mit winget) und **macOS**
 ![PowerShell unter Windows als Administrator](docs/assets/images/PowerShell.png)
 - **macOS:** Die Anleitungen setzen voraus, dass [Homebrew](https://brew.sh) installiert ist. Falls nicht, zuerst die Seite [Homebrew einrichten](docs/homebrew.html) befolgen. Befehle müssen in der **Terminal-App** ausgeführt werden. Öffnen Sie ein **Terminal**, indem Sie die Spotlight-Suche mit Cmd + Leertaste öffnen, Terminal eingeben und mit Enter bestätigen.
 ![Terminal unter macOS öffnen](docs/assets/images/Terminal.png)
-- Die Codeblöcke können einfach kopiert werden, indem Sie auf das Clipboard-Symbol (📋) im oberen rechnten Teil des Code-Blocks klicken. Danach können Sie den Code-Block per Cmd+V / Ctrl+V im Terminal bzw. PowerShell einfügen und mit Enter ausführen.
 
 ## Schnellinstallation
 

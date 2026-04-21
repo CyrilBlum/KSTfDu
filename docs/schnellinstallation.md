@@ -8,11 +8,13 @@ nav_order: 3
 
 Diese Seite bündelt die wichtigsten Installationsschritte in je **einem Block für Windows** und **einem Block für macOS**.
 
+Die Codeblöcke können einfach kopiert werden, indem Sie auf das Symbol (📋) im oberen rechnten Teil des Code-Blocks klicken. Danach können Sie den Code-Block per Cmd+V / Ctrl+V im Terminal bzw. PowerShell einfügen und mit Enter ausführen.
+
 ---
 
 ## Windows (winget)
 
-Öffnen Sie **PowerShell als Administrator** und führen Sie den gesamten Block aus:
+Öffnen Sie **PowerShell als Administrator** und führen Sie den gesamten Block aus.
 
 ```powershell
 Write-Host "========================================" -ForegroundColor Cyan
